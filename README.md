@@ -1,12 +1,15 @@
 # Basketball Player Statistics Analysis
+____________
 **Purpose**:
+____________
 This project is designed to analyze basketball player statistics from a CSV file and calculate various performance metrics. It identifies the top 100 players for each metric and displays the results. The goal is to provide insights into player performance based on different statistical measures.
-
+___________________________________
 **Class Design and Implementation**:
+___________________________________
 The project uses the pandas and numpy libraries for data manipulation and numerical operations. The main operations are performed on a pandas DataFrame loaded from a CSV file containing player statistics.
-
+____________________
 **Class Attributes**
-
+____________________
 **data**: A pandas DataFrame containing the player statistics loaded from the CSV file.
 
 **metrics**: A list of performance metrics to be calculated and analyzed.
@@ -36,17 +39,17 @@ The project uses the pandas and numpy libraries for data manipulation and numeri
 **identify_top_100_players()**: This function identifies the top 100 players for each metric and stores the results in the top_100_players dictionary.
 
 **display_results()**: Displays the top 100 players for each metric.
-
+_______________
 **Limitations**
-
+_______________
 Data Quality: The accuracy of the results depends on the quality and completeness of the input data.
 
 Performance: For very large datasets, the sorting and selection operations may be time-consuming.
 
 Assumptions: The code assumes that the input CSV file has the necessary columns (FGM, FGA, 3PM, 3PA, FTM, FTA, PTS, MIN, FGA, FTA, BLK, GP, STL).
-
+__________
 **Usage**
-
+__________
 Load the Data: Use the load_data(file_path) method to load the player statistics data from a CSV file.
 
 Calculate Metrics: Use the calculate_metrics() method to calculate various performance metrics.
