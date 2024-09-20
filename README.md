@@ -1,16 +1,16 @@
-# Numpy
-Basketball Player Statistics Analysis
-Purpose
+# Basketball Player Statistics Analysis
+**Purpose**
 This project is designed to analyze basketball player statistics from a CSV file and calculate various performance metrics. It identifies the top 100 players for each metric and displays the results. The goal is to provide insights into player performance based on different statistical measures.
 
-Class Design and Implementation
+**Class Design and Implementation**
 The project uses the pandas and numpy libraries for data manipulation and numerical operations. The main operations are performed on a pandas DataFrame loaded from a CSV file containing player statistics.
 
-Class Attributes
+**Class Attributes**
 data: A pandas DataFrame containing the player statistics loaded from the CSV file.
 metrics: A list of performance metrics to be calculated and analyzed.
 top_100_players: A dictionary to store the top 100 players for each metric.
-Methods
+
+**Methods**
 load_data(file_path): Loads the player statistics data from the specified CSV file into the data attribute.
 calculate_metrics(): Calculates various performance metrics and adds them as new columns to the data DataFrame.
 Field Goal Accuracy (FG%): Percentage of successful field goals out of total field goal attempts.
@@ -22,11 +22,13 @@ Average Number of Blocks per Game (BPG): Average number of blocks per game.
 Average Number of Steals per Game (SPG): Average number of steals per game.
 identify_top_100_players(): Identifies the top 100 players for each metric and stores the results in the top_100_players dictionary.
 display_results(): Displays the top 100 players for each metric.
-Limitations
+
+**Limitations**
 Data Quality: The accuracy of the results depends on the quality and completeness of the input data.
 Performance: For very large datasets, the sorting and selection operations may be time-consuming.
 Assumptions: The code assumes that the input CSV file has the necessary columns (FGM, FGA, 3PM, 3PA, FTM, FTA, PTS, MIN, FGA, FTA, BLK, GP, STL).
-Usage
+
+**Usage**
 Load the Data: Use the load_data(file_path) method to load the player statistics data from a CSV file.
 Calculate Metrics: Use the calculate_metrics() method to calculate various performance metrics.
 Identify Top 100 Players: Use the identify_top_100_players() method to identify the top 100 players for each metric.
